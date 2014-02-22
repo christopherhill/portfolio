@@ -1,0 +1,124 @@
+body {
+	background: url("../img/tweed.png");
+}
+/* flip classes */
+
+/* entire container, keeps perspective */
+.flip-container {
+	-webkit-perspective: 1000;
+	-moz-perspective: 1000;
+	-o-perspective: 1000;
+	float: left;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 300px;
+	height: 360px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+/* flip speed goes here */
+.flipper {
+	-webkit-transition: 0.6s;
+		-moz-transition: 0.6s;
+			-o-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+			-o-transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+			-o-backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-shadow: #444 0px 0px 5px 2px;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	background: #fff;
+	text-align: center;
+}
+.front img {
+	border-bottom: 10px;
+}
+
+
+/* back, initially hidden pane */
+.back {
+	-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+			-o-transform: rotateY(180deg);
+	background: #fff;
+}
+
+.content {
+	padding: 20px;
+	text-align: center;
+}
+.content p { margin-top: 20px; }
+.content ul {
+	list-style-type: none;
+	padding: 0; margin: 0;
+}
+
+.flip-container .front img {
+	margin-top: 20px; 
+	width: 80%;
+	overflow: hidden;
+	box-shadow: 0 4px 12px -2px #cdcdcd;
+}
+.front h2 { margin-top: 20px; font-size: 24px; line-height: 30px; font-weight: normal; }
+.flip-container:hover .flipper,
+.flip-container.hover .flipper,
+.flip-container.flip .flipper {
+	-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+			-o-transform: rotateY(180deg);
+}
+
+.container.main { margin-top: 100px; height: 1600px;}
+.container.contact { margin-top: 20px; }
+#contact {
+	background: black;
+	color: #fff;
+}
+#contact ul {
+	list-style-type: none;
+}
+#skills {
+	background: #fff;
+	color: #000;
+}
+#links {
+	background: #bcbcbc;
+	color: #000;
+}
+.container.skills, .container.links { margin-top: 20px; margin-bottom: 20px;}
+
+.date { font-size: 14px; }
+.collapsed {display: none;}
+#tableControl, #tableControlLinks {
+	height: 40px;
+}
+#tableControlButton, #tableControlButtonLinks {
+	margin-top: -10px;
+}
+#cardHolder {
+	width: 960px;
+	margin: 0px auto;	
+}
