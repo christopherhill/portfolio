@@ -3,101 +3,98 @@
 <html>
 <head>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js" type="text/javascript"></script>
-	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="js/controller.js" type="text/javascript"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js" type="text/javascript"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="js/main.js" type="text/javascript"></script>
-	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<!-- link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css' -->
 	<link href="css/styles.css" rel="stylesheet">
-
+	
 	<!--[if IE]>
 	<script type="text/javascript">
 		var isIE = true;
 	</script>
 	<![endif]-->
-
-	<!-- script type="text/javascript" src="js/pdf/src/network.js"></script>
-	<script type="text/javascript" src="js/pdf/src/chunked_stream.js"></script>
-	<script type="text/javascript" src="js/pdf/src/pdf_manager.js"></script>
-	<script type="text/javascript" src="js/pdf/src/core.js"></script>
-	<script type="text/javascript" src="js/pdf/src/util.js"></script>
-	<script type="text/javascript" src="js/pdf/src/api.js"></script>
-	<script type="text/javascript" src="js/pdf/src/canvas.js"></script>
-	<script type="text/javascript" src="js/pdf/src/obj.js"></script>
-	<script type="text/javascript" src="js/pdf/src/annotation.js"></script>
-	<script type="text/javascript" src="js/pdf/src/function.js"></script>
-	<script type="text/javascript" src="js/pdf/src/charsets.js"></script>
-	<script type="text/javascript" src="js/pdf/src/cidmaps.js"></script>
-	<script type="text/javascript" src="js/pdf/src/colorspace.js"></script>
-	<script type="text/javascript" src="js/pdf/src/crypto.js"></script>
-	<script type="text/javascript" src="js/pdf/src/evaluator.js"></script>
-	<script type="text/javascript" src="js/pdf/src/fonts.js"></script>
-	<script type="text/javascript" src="js/pdf/src/glyphlist.js"></script>
-	<script type="text/javascript" src="js/pdf/src/image.js"></script>
-	<script type="text/javascript" src="js/pdf/src/metrics.js"></script>
-	<script type="text/javascript" src="js/pdf/src/parser.js"></script>
-	<script type="text/javascript" src="js/pdf/src/pattern.js"></script>
-	<script type="text/javascript" src="js/pdf/src/stream.js"></script>
-	<script type="text/javascript" src="js/pdf/src/worker.js"></script>
-	<script type="text/javascript" src="js/pdf/external/jpgjs/jpg.js"></script>
-	<script type="text/javascript" src="js/pdf/src/jpx.js"></script>
-	<script type="text/javascript" src="js/pdf/src/jbig2.js"></script>
-
-
-	<script type="text/javascript">
-	// Specify the main script used to create a new PDF.JS web worker.
-	// In production, change this to point to the combined `pdf.js` file.
-	PDFJS.workerSrc = 'js/pdf/src/worker_loader.js';
-	</script -->
-
+	
 </head>
 <body>
 	
 	<header>
-		<div class="navbar navbar-inverse navbar-static-top">
-			<div class="navbar-inner">
-		    	<a class="brand" href="#">Christopher Hill</a>
-			    <ul class="nav">
-			      <li class="active"><a href="#">Portfolio</a></li>
-			      <li><a target="_blank" href="assets/resume.pdf">R&eacute;sum&eacute;</a></li>
-				  <li><a class="smoothScroll" href="#skills">Experience</a></li>
-			      <li><a class="smoothScroll" href="#contact">Contact</a></li>
-			      <li><a class="smoothScroll" href="#links">Links</a></li>
-				  <li><a href="/blog/">Blog</a></li>
-			    </ul>
-		  	</div>
-		</div>
+		<nav class="navbar navbar-inverse navbar-fixed" role="navigation">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Christopher Hill</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="main-menu">
+	      <ul class="nav navbar-nav">
+	        <!--li class="active"><a href="#">Link</a></li>
+	        <li><a href="#">Link</a></li -->
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-chevron-down"></i></a>
+	          <ul class="dropdown-menu">
+		        	<li><a target="_blank" href="assets/resume.pdf">R&eacute;sum&eacute;</a></li>
+				    	<li><a class="smoothScroll" href="#contact">Contact</a></li>
+			      	<li class="divider"></li>
+				  		<li><a href="/blog/">Blog</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
 	</header>
 
 	<div class="container main">
-	
+
+	<div class="twitter-container">
+
+	<a class="twitter-timeline" href="https://twitter.com/chrishillsf" data-widget-id="409739253396934657">Tweets by @chrishillsf</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	</div>
+
+
+
 		<div id="cardHolder" class="row pagination-centered text-center">
 			
+			<div class="tagline">
+				<h1>Web Architect &amp; Full-Stack Engineer</h1>
+				<h4>Strengths: HTML5, CSS3, Javascript, jQuery, AngularJS, Ruby on Rails, Python/Django</h4>  
+			</div>
+
+			<div class="quote-container">
+				<blockquote>
+					<p>&ldquo;Great software meets near the interesection of simplicity, possibility, reality, scalability and usability. Without these attributes, a software product is fundamentally irrelevant to the market. Skewed too much in any one of those directions, the result is unbalanced.&rdquo;<p>
+					<footer>Christopher Hill</footer>
+				</blockquote> 
+			</div>
+		
 			<div class="flip-container">
 
 				<div class="flipper">
 					<div class="front">
-						<img src="img/appdynamics.png">
-						<h2>AppDynamics<br>Self-Service Portal</h2>
-						<span class="date">June 2013</span>
+						<img src="img/bartseek.png">
+						<h2>BartSeek</h2>
+						<h6>Project Manager, Architect &amp; Full-Stack Engineer</h6>
+						<span class="date">February 2014</span>
 					</div>
 					<div class="back">
 						<div class="content">
-							<h4>AppDynamics Self-Service Portal</h4>
+							<h4>BartSeek Transit Finder</h4>
 							<ul>
-								<li class="stack"><span>LAMPy</span> <span>Django</span> <span>SSL</span></li>
-								<li class="technologies"><span>Python</span> <span>PHP</span> <span>Javascript</span> <span>jQuery</span> <span>HTML5</span> <span>AJAX</span> <span>CSS3</span></li>
-								<li class="apis"><span>Marketo API</span> <span>Salesforce API</span> </li>
+								<li class="stack"><span>LAWPR</span></li>
+								<li class="technologies"><span>Ruby</span> <span>Sinatra</span> <span>Javascript</span> <span>AngularJS</span> <span>jQuery</span>  <span>AJAX</span> <span>JSON</span> <span>HTML5</span> <span>Bootstrap</span> <span>CSS3</span></li>
+								<li class="apis"><span>BART API</span> </li>
 							</ul>
-							<p>Self-service portal fully integrated with Marketo and Salesforce. I did most of the front-end work, with quickly evolving requirements.</p>
-							<button class="btn" type="button" onclick="window.open('https://portal.appdynamics.com/account/signup/signupForm')">Open</button>
+							<p>See when BART trains are departing from the station nearest you, before you step through the gate.</p>
+							<button class="btn" type="button" onclick="window.open('http://bartseek.com')">Open</button>
 						</div>
 					</div>
 				</div>
 
 			</div>
-
 
 			<div class="flip-container">
 
@@ -105,6 +102,7 @@
 					<div class="front">
 						<img src="img/kcmsearch.png">
 						<h2>Virgin America<br>KCM Portal</h2>
+						<h6>Lead Front-End Engineer &amp; Architect</h6>
 						<span class="date">January 2013</span>
 					</div>
 					<div class="back">
@@ -127,32 +125,9 @@
 
 				<div class="flipper">
 					<div class="front">
-						<img src="img/studioish.png">
-						<h2>Studio Ish</h2>
-						<span class="date">December 2013</span>
-					</div>
-					<div class="back">
-						<div class="content">
-							<h4>Studio Ish</h4>
-							<ul>
-								<li class="stack"><span>LAMP</span> <span>Custom Content Control</span> </li>
-								<li class="technologies"><span>PHP</span> <span>Javascript</span> <span>jQuery</span> <span>HTML5</span> <span>AJAX</span> <span>CSS3</span></li>
-								<li class="apis"></li>
-							</ul>
-							<p>Full-screen portfolio showcasing the work of artist Ishita Sharma.</p>
-							<button class="btn" type="button" onclick="window.open('http://www.studioish.net')">Open</button>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-			<div class="flip-container">
-
-				<div class="flipper">
-					<div class="front">
 						<img src="img/hbpsales.jpg">
 						<h2>Harvard Business Publishing Sales Portal</h2>
+						<h6>Front-End Engineer</h6>
 						<span class="date">May 2012</span>
 					</div>
 					<div class="back">
@@ -170,60 +145,64 @@
 				</div>
 
 			</div>
-
 			<div class="flip-container">
 
 				<div class="flipper">
 					<div class="front">
-						<img src="img/mingformatics.jpg">
-						<h2>Mingformatics</h2>
-						<span class="date">June 2012</span>
+						<img src="img/appdynamics.png">
+						<h2>AppDynamics<br>Self-Service Portal</h2>
+						<h6>Lead Front-End Engineer</h6>
+						<span class="date">June 2013</span>
 					</div>
 					<div class="back">
 						<div class="content">
-							<h4>Mingformatics</h4>
+							<h4>AppDynamics Self-Service Portal</h4>
 							<ul>
-								<li class="stack"><span>LAMP</span> <span>Drupal 7</span> </li>
-								<li class="technologies"><span>PHP</span> <span>Javascript</span> <span>jQuery</span> <span>HTML5</span> <span>AJAX</span> <span>CSS3</span></li>
-								<li class="apis"></li>
+								<li class="stack"><span>LAMPy</span> <span>Django</span> <span>SSL</span></li>
+								<li class="technologies"><span>Python</span> <span>PHP</span> <span>Javascript</span> <span>jQuery</span> <span>HTML5</span> <span>AJAX</span> <span>CSS3</span></li>
+								<li class="apis"><span>Marketo API</span> <span>Salesforce API</span> </li>
 							</ul>
-							<p>A place for doctors and patients to meet, with the ability to track symptoms over time.</p>
-							<button class="btn" type="button" onclick="window.open('http://www.mingformatics.com')">Open</button>
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<div class="flip-container">
-
-				<div class="flipper">
-					<div class="front">
-						<img src="img/vn.jpg">
-						<h2>Vital Nutrio</h2>
-						<span class="date">August 2012</span>
-					</div>
-					<div class="back">
-						<div class="content">
-							<h4>Vital Nutrio</h4>
-							<ul>
-								<li class="stack"><span>LAMP</span> <span>Drupal 7</span> <span>SSL</span></li>
-								<li class="technologies"><span>PHP</span> <span>Javascript</span> <span>jQuery</span> <span>HTML5</span> <span>AJAX</span> <span>CSS3</span></li>
-								<li class="apis"><span>Twitter API</span> <span>Paypal API</span></li>
-							</ul>
-							<p>A complete e-commerce solution for nutritional supplements using Drupal and modules such as Drupal Commerce, Views, Import Feeds, and Rules. Custom development with the Twitter and Paypal API.</p>
-							<button class="btn" type="button" onclick="window.open('http://www.vitalnutrio.com')">Open</button>
+							<p>Self-service portal fully integrated with Marketo and Salesforce. I did most of the front-end work, with quickly evolving requirements.</p>
+							<button class="btn" type="button" onclick="window.open('https://portal.appdynamics.com/account/signup/signupForm')">Open</button>
 						</div>
 					</div>
 				</div>
 
 			</div>
 
-			<div class="flip-container">
+	<div class="flip-container">
+
+				<div class="flipper">
+					<div class="front">
+						<img src="img/razoo.png">
+						<h2>Razoo</h2>
+						<h6>Front-End Engineer</h6>
+						<span class="date">November 2013</span>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h4>Razoo</h4>
+							<ul>
+								<li class="stack"><span>LUPR</span></li>
+								<li class="technologies"><span>Ruby</span> <span>Rails</span> <span>Javascript</span> <span>AngularJS</span> <span>jQuery</span>  <span>AJAX</span> <span>JSON</span> <span>HTML5</span>
+								<span>Bootstrap</span> <span>SASS</span> <span>CSS3</span></li>
+								<li class="apis"><span>Stripe API</span> </li>
+							</ul>
+							<p>Crowdfunding for 501c3 non-profit organizations.</p>
+							<button class="btn" type="button" onclick="window.open('http://www.razoo.com')">Open</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+	<div class="flip-container">
 
 				<div class="flipper">
 					<div class="front">
 						<img src="img/hbppr.jpg">
 						<h2>Harvard Business Publishing<br>Password Reset</h2>
+						<h6>Front-End Engineer</h6>
 						<span class="date">August 2012</span>
 					</div>
 					<div class="back">
@@ -247,8 +226,85 @@
 
 				<div class="flipper">
 					<div class="front">
+						<img src="img/studioish.png">
+						<h2>Studio Ish</h2>
+						<h6>Full-Stack Engineer</h6>
+						<span class="date">December 2013</span>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h4>Studio Ish</h4>
+							<ul>
+								<li class="stack"><span>LAMP</span> <span>Custom Content Control</span> </li>
+								<li class="technologies"><span>PHP</span> <span>Javascript</span> <span>jQuery</span> <span>HTML5</span> <span>AJAX</span> <span>CSS3</span></li>
+								<li class="apis"></li>
+							</ul>
+							<p>Full-screen portfolio showcasing the work of artist Ishita Sharma.</p>
+							<button class="btn" type="button" onclick="window.open('http://www.studioish.net')">Open</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="flip-container">
+
+				<div class="flipper">
+					<div class="front">
+						<img src="img/mingformatics.jpg">
+						<h2>Mingformatics</h2>
+						<h6>Full-Stack Engineer</h6>
+						<span class="date">June 2012</span>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h4>Mingformatics</h4>
+							<ul>
+								<li class="stack"><span>LAMP</span> <span>Drupal 7</span> </li>
+								<li class="technologies"><span>PHP</span> <span>Javascript</span> <span>jQuery</span> <span>HTML5</span> <span>AJAX</span> <span>CSS3</span></li>
+								<li class="apis"></li>
+							</ul>
+							<p>A place for doctors and patients to meet, with the ability to track symptoms over time.</p>
+							<button class="btn" type="button" onclick="window.open('http://www.mingformatics.com')">Open</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="flip-container">
+
+				<div class="flipper">
+					<div class="front">
+						<img src="img/vn.jpg">
+						<h2>Vital Nutrio</h2>
+						<h6>Full-Stack Engineer</h6>
+						<span class="date">August 2012</span>
+					</div>
+					<div class="back">
+						<div class="content">
+							<h4>Vital Nutrio</h4>
+							<ul>
+								<li class="stack"><span>LAMP</span> <span>Drupal 7</span> <span>SSL</span></li>
+								<li class="technologies"><span>PHP</span> <span>Javascript</span> <span>jQuery</span> <span>HTML5</span> <span>AJAX</span> <span>CSS3</span></li>
+								<li class="apis"><span>Twitter API</span> <span>Paypal API</span></li>
+							</ul>
+							<p>A complete e-commerce solution for nutritional supplements using Drupal and modules such as Drupal Commerce, Views, Import Feeds, and Rules. Custom development with the Twitter and Paypal API.</p>
+							<button class="btn" type="button" onclick="window.open('http://www.vitalnutrio.com')">Open</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		
+
+			<div class="flip-container">
+
+				<div class="flipper">
+					<div class="front">
 						<img src="img/rayburn.jpg">
 						<h2>Rayburn Music</h2>
+						<h6>Full-Stack Engineer</h6>
 						<span class="date">February 2012</span>
 					</div>
 					<div class="back">
@@ -272,6 +328,7 @@
 					<div class="front">
 						<img src="img/cypromo.png">
 						<h2>Conduct Yourself</h2>
+						<h6>Full-Stack Engineer</h6>
 						<span class="date">June 2011</span>
 					</div>
 					<div class="back">
@@ -291,143 +348,9 @@
 
 			</div>
 
-
-			
-
 		</div>
 
 	</div>
-
-	<!--canvas id="the-canvas" style="border:1px solid black;"/ -->
-	<section>
-		<a name="skills"></a>
-		<div id="skills" class="row">
-			<div class="container skills">
-				
-				<div id="tableControl">
-					<h3>Experience <a id="tableControlButton" class="btn"><i class="icon-arrow-down"></i></a></h3>
-				</div>
-
-				<div id="tableContainer" class="collapsed">
-				<table class="table striped">
-					<thead>
-						<th>Type</th>
-						<th>Description</th>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Languages, etc.</td>
-							<td>HTML5, CSS3, Javascript, PHP, Python, JSP, XML, Java, Struts, JSON, JSONP, SAML, ASP, BASIC, FTL, C, C++</td>
-						</tr>
-						<tr>
-							<td>Databases</td>
-							<td>MySQL (command-line, phpMyAdmin &amp; MySQL Workbench), Microsoft SQL, Microsoft Access, Microsoft Visual FoxPro</td>
-						</tr>
-						<tr>
-							<td>AJAX</td>
-							<td>jQuery, Javascript</td>
-						</tr>
-						<tr>
-							<td>APIs</td>
-							<td>Google Maps, Rovi, Google Feeds, Marketo, Spotify, PayPal, Amazon, Twitter, Facebook</td>
-						</tr>
-						<tr>
-							<td>Javascript Libraries</td>
-							<td>Angular, Backbone, Twitter Bootstrap, Modernizr, jQuery, jQuery Validate, jQuery UI, YUI, Mustache.js, Handlebars.js, mooTools, flowPlayer</td>
-						</tr>
-						<tr>
-							<td>CSS Styles</td>
-							<td>960 Grid, Responsive Design &amp; Media Queries, Graceful Degradation</td>
-						</tr>
-						<tr>
-							<td>Version Control</td>
-							<td>Git, SVN, Alfresco</td>
-						</tr>
-						<tr>
-							<td>Protocols</td>
-							<td>HTTP, SSL</td>
-						</tr>
-						<tr>
-							<td>IDEs &amp; Environments</td>
-							<td>Sublime Text Editor, Eclipse, Aptana Studio, Dreamweaver</td>
-						</tr>
-						<tr>
-							<td>CMS</td>
-							<td>Drupal, Joomla, WordPress</td>
-						</tr>
-						<tr>
-							<td>Drupal Modules</td>
-							<td>Drupal Commerce, Views, Rules, Context, Panels</td>
-						</tr>
-						<tr>
-							<td>Language Familiarity</td>
-							<td>Objective-C, Perl, Visual Basic, Pascal</td>
-						</tr>
-						<tr>
-							<td>Servers, etc.</td>
-							<td>Apache, Apache Tomcat, Linux (CentOS 5.7), Windows 2008, 2003, 2000</td>
-						</tr>
-						<tr>
-							<td>Clients</td>
-							<td>Linux (Ubuntu, Fedora, Mint), MacOS (Snow Leopard, Lion), Windows 7, Vista, XP, 2000</td>
-						</tr>
-						<tr>
-							<td>Media Experience</td>
-							<td>Adobe Creative Suite CS6, 5.5: Photoshop, Illustrator, Dreamweaver, Acrobat, Premiere, Soundbooth, Encore, Illustrator, Flash ProTools 10, Sibelius 6 &amp; 7</td>
-						</tr>
-						<tr>
-							<td>Additional Technologies</td>
-							<td>Microsoft SharePoint (WSS 3.0) and Microsoft InfoPath, Microsoft Visual Studio 2010, Microsoft Office 2010, TeamViewer</td>
-						</tr>
-						<tr>
-							<td>Methodologies</td>
-							<td>Agile, Kanban</td>
-						</tr>
-
-					</tbody>
-				</table>
-			</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section>
-		<a name="links"></a>
-		<div id="links" class="row">
-			<div class="container links">
-				
-				<div id="tableControlLinks">
-					<h3>Links <a id="tableControlButtonLinks" class="btn"><i class="icon-arrow-down"></i></a></h3>
-				</div>
-
-				<div id="tableContainerLinks" class="collapsed">
-				<table class="table striped">
-					<thead>
-						<th>Type</th>
-						<th>Source</th>
-					</thead>
-					<tbody>
-						<tr>
-							<td>News</td>
-							<td><a href="http://news.ycombinator.com/">Hacker News</a></td>
-						</tr>
-						<tr>
-							<td>Projects</td>
-							<td><a href="http://www.github.com">GitHub</a>, <a href="http://gist.github.com">Gist</a></td>
-						</tr>
-						<tr>
-							<td>Inspiration</td>
-							<td><a href="http://www.stackoverflow.com">Stack Overflow</a>, <a href="http://www.smashingmagazine.com">Smashing Magazine</a></td>
-						</tr>
-						
-					</tbody>
-				</table>
-			</div>
-
-			</div>
-		</div>
-	</section>
 
 	<footer>
 		<a name="contact"></a>

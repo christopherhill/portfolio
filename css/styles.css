@@ -1,5 +1,9 @@
 body {
-	background: url("../img/tweed.png");
+	background-image: -ms-linear-gradient(top left, #222222 0%, #377894 100%);
+	background-image: -moz-linear-gradient(top left, #222222 0%, #377894 100%);
+	background-image: -o-linear-gradient(top left, #222222 0%, #377894 100%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #222222), color-stop(1, #377894));
+	background-image: -webkit-linear-gradient(top left, #222222 0%, #377894 100%);
 }
 /* flip classes */
 
@@ -27,9 +31,9 @@ body {
 
 /* flip speed goes here */
 .flipper {
-	-webkit-transition: 0.6s;
-		-moz-transition: 0.6s;
-			-o-transition: 0.6s;
+	-webkit-transition: 0.9s;
+		-moz-transition: 0.9s;
+			-o-transition: 0.9s;
 	-webkit-transform-style: preserve-3d;
 		-moz-transform-style: preserve-3d;
 			-o-transform-style: preserve-3d;
@@ -91,7 +95,7 @@ body {
 			-o-transform: rotateY(180deg);
 }
 
-.container.main { margin-top: 100px; height: 1600px;}
+.container.main { margin-top: 50px; height: 1900px;}
 .container.contact { margin-top: 20px; }
 #contact {
 	background: black;
@@ -121,4 +125,32 @@ body {
 #cardHolder {
 	width: 960px;
 	margin: 0px auto;	
+}
+.twitter-container {
+	max-width: 400px;
+	position: fixed;
+	left: 50px;
+	top: 140px;
+}
+.quote-container {
+	background: #444;
+	color: #fff;
+	width: 98%;
+	text-align: center;
+}
+
+.label-info {
+	background-color: #448396;
+}
+.label {
+	font-weight: normal;
+	font-size: 10px;
+}
+.glyphicon.glyphicon-chevron-down {
+	top: 4px;
+}
+.tagline {
+	color: #fff;
+	font-weight: normal;
+	padding:20px 0 20px;
 }

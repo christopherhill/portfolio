@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
 	try {
@@ -10,12 +8,7 @@ $(document).ready(function() {
 
 	}
 
-	/* if (typeof(isIE) != undefined && isIE === true) {
-		$("#myModal").modal();
-	} */
-
 	$(".flip-container").on('mouseover mouseout', function() {
-		console.log('fired');
 		$(this).toggleClass('hover');
 	});
 
@@ -52,7 +45,6 @@ $(document).ready(function() {
 
 			$("#tableContainer").addClass("collapsed");
 			$("#tableControlButton").find("i").removeClass("icon-arrow-up").addClass("icon-arrow-down");
-			
 
 		}
 
@@ -81,35 +73,9 @@ $(document).ready(function() {
 
 			$("#tableContainerLinks").addClass("collapsed");
 			$("#tableControlButtonLinks").find("i").removeClass("icon-arrow-up").addClass("icon-arrow-down");
-			
 
 		}
 
-
 	});
-	/* PDFJS.getDocument('assets/resume.pdf').then(function(pdf) {
-	  // Using promise to fetch the page
-	  pdf.getPage(1).then(function(page) {
-	    var scale = 1.5;
-	    var viewport = page.getViewport(scale);
-
-	    //
-	    // Prepare canvas using PDF page dimensions
-	    //
-	    var canvas = document.getElementById('the-canvas');
-	    var context = canvas.getContext('2d');
-	    canvas.height = viewport.height;
-	    canvas.width = viewport.width;
-
-	    //
-	    // Render PDF page into canvas context
-	    //
-	    var renderContext = {
-	      canvasContext: context,
-	      viewport: viewport
-	    };
-	    page.render(renderContext);
-	  });
-	}); */
 
 });
