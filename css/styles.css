@@ -129,8 +129,9 @@ body {
 .twitter-container {
 	max-width: 400px;
 	position: fixed;
-	left: 50px;
-	top: 140px;
+	right: 50px;
+	top: 150px;
+	z-index: 10000;
 }
 .quote-container {
 	background: #444;
