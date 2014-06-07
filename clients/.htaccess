@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "This portal is for clients only"
+AuthUserFile /var/www/christopherhillconsulting.com/public_html/clients/.htpasswd
+Require user crhconsulting
