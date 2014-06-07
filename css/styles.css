@@ -1,11 +1,49 @@
-body {
-	background-image: -ms-linear-gradient(top left, #222222 0%, #377894 100%);
-	background-image: -moz-linear-gradient(top left, #222222 0%, #377894 100%);
-	background-image: -o-linear-gradient(top left, #222222 0%, #377894 100%);
-	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #222222), color-stop(1, #377894));
-	background-image: -webkit-linear-gradient(top left, #222222 0%, #377894 100%);
+@font-face {
+	font-family: "Gotham Light";
+	src: url(../fonts/GothamHTF-Light.otf);
 }
-/* flip classes */
+
+@font-face {
+	font-family: "Gotham Medium";
+	src: url(../fonts/GothamHTF-Medium.otf);
+}
+
+body {
+	font-family: "Gotham Light";
+	background-image: url("../img/background.jpg");
+	background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Gotham Medium";
+}
+
+.navbar {
+	background-color: RGBA(78, 156, 167, .95);
+	border: none;
+}
+
+a {
+	color: #fff;
+}
+
+li.dropdown.open a.dropdown-toggle, li.dropdown a:hover {
+	background-color: rgba(255,255,255,.2);
+}
+
+.tagline {
+	margin: 30px;
+}
+
+p.sub-title {
+	font-size: 18px;
+}
+
+a:hover, a:visited, a:link {
+	text-decoration: none;
+	color: #fff;
+	background: transparent;
+}
 
 /* entire container, keeps perspective */
 .flip-container {
@@ -86,7 +124,10 @@ body {
 	overflow: hidden;
 	box-shadow: 0 4px 12px -2px #cdcdcd;
 }
-.front h2 { margin-top: 20px; font-size: 24px; line-height: 30px; font-weight: normal; }
+.front {
+	padding: 10px;
+}
+.front h2 { margin-top: 20px; font-size: 20px; line-height: 30px; font-weight: normal; }
 .flip-container:hover .flipper,
 .flip-container.hover .flipper,
 .flip-container.flip .flipper {
