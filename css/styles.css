@@ -45,6 +45,10 @@ a:hover, a:visited, a:link {
 	background: transparent;
 }
 
+.dropdown-menu {
+	border: 1px solid #ccc;
+	border-radius: 0;
+}
 /* entire container, keeps perspective */
 .flip-container {
 	-webkit-perspective: 1000;
